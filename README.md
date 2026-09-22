@@ -1,23 +1,34 @@
-# Coding with an AI pair programmer
+# Muhasebe Takip
 
-[GitHub Copilot](https://github.com/features/copilot) is your AI pair programmer, built to support you throughout your development experience. As with any new tool, using GitHub Copilot requires learning a few new skills. This project is built to do exactly that, to give you an opportunity to build a project, using the language and tools you typically use, with GitHub Copilot.
+Jetpack Compose ve Room kullanılarak hazırlanmış, cihaz üzerinde çalışan basit bir muhasebe takip Android uygulaması.
 
-> **[Start hacking!](./hackathon.md)**
+## Özellikler
 
-## Requirements
+- Özet ekranında bakiye, toplam gelir/gider ve son işlemler
+- Gelir veya gider kaydı ekleme
+- Cari hesap (müşteri/tedarikçi) ekleme ve listeleme
+- Room SQLite veritabanı ile çevrimdışı kalıcı kayıt
+- Türkçe arayüz ve Türk Lirası biçimlendirmesi
 
-This project is configured with a [devcontainer](./.devcontainer/devcontainer.json), which can be [run locally](https://code.visualstudio.com/docs/devcontainers/containers) or in a [codespace](https://github.com/features/codespaces). Please refer to the [setup exercise](./content/0-get-started.md) for more information.
+## Çalıştırma
 
-The project does assume you are familiar with programming, but is not prescriptive about language or framework choice.
+1. Projeyi Android Studio ile açın.
+2. Android Studio'nun Gradle senkronizasyonunu tamamlamasını bekleyin.
+3. API 26 veya üzeri bir emülatör/cihaz seçin.
+4. `app` çalıştırma yapılandırmasıyla uygulamayı başlatın.
 
-## License 
+Komut satırından çalıştırmak için Android Studio'nun ürettiği Gradle wrapper ile Windows'ta:
 
-This project is licensed under the terms of the MIT open source license. Please refer to [MIT](./LICENSE.txt) for the full terms.
+```powershell
+.\gradlew.bat :app:assembleDebug
+```
 
-## Maintainers 
+İlk sürüm tek cihaz ve tek kullanıcı varsayımıyla çevrimdışı çalışır. Bulut senkronizasyonu, kullanıcı hesabı, e-fatura ve rapor dışa aktarma sonraki genişletme alanlarıdır.
 
-You can find the list of maintainers in [CODEOWNERS](./.github/CODEOWNERS)
+## Repository
 
-## Support
+This repository is also the GitHub Copilot workshop project. See [the workshop guide](./hackathon.md), [setup exercise](./content/0-get-started.md), and [contribution guide](./CONTRIBUTING.md) for the general project documentation.
 
-This project is provided as-is, and may be updated over time. If you have questions, please [open an issue](/issues/new).
+## License
+
+This project is licensed under the terms of the MIT open source license. See [LICENSE.txt](./LICENSE.txt).
