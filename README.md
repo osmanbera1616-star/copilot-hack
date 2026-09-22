@@ -24,3 +24,11 @@ Komut satırından çalıştırmak için Android Studio'nun ürettiği Gradle wr
 ```
 
 İlk sürüm tek cihaz ve tek kullanıcı varsayımıyla çevrimdışı çalışır. Bulut senkronizasyonu, kullanıcı hesabı, e-fatura ve rapor dışa aktarma sonraki genişletme alanlarıdır.
+
+## Repository
+
+This repository is also the GitHub Copilot workshop project. See [the workshop guide](./hackathon.md), [setup exercise](./content/0-get-started.md), and [contribution guide](./CONTRIBUTING.md) for the general project documentation.
+
+## License
+
+This project is licensed under the terms of the MIT open source license. See [LICENSE.txt](./LICENSE.txt).
